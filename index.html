@@ -1,12 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature's Platter</title>
-   <link rel="shortcut icon" href="images/favicon-leaf-48.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature's Platter</title>
+  <link rel="shortcut icon" href="images/favicon-leaf-48.png" type="image/x-icon">
+  <!-- Daisy UI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font CDN-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<!-- Tailwind CSS cdn -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+        }
+      }
+    }
+  }
+</script>
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    
+  
 </head>
+
 <body>
-    <h1>This is my website</h1>
+  <!-- header section -->
+  <header class="mb-32 bg-gradient-to-b from-white to-stone-300">
+    <!-- nav section -->
+    <div class="flex justify-between  md:container mx-auto my-7 items-center">
+      <!-- logo here -->
+      <div>
+        <img src="images/logo-header.png" alt="">
+      </div>
+      <!-- nav here -->
+      <div>
+        <nav>
+          <ul class="flex gap-6">
+            <li><a href="">Product</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- head section button -->
+      <div class="flex gap-4 items-center">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <button class="bg-white px-7 py-2 rounded-lg border-solid border-2 border-green-500">Login</button>
+        <button class="bg-green-600 text-white px-7 py-2 rounded-lg">Register</button>
+      </div>
+    </div>
+    <!-- hero section -->
+    <section class="flex flex-col items-center md:container mx-auto mt-32 ">
+      <h1 class="text-5xl font-bold">Freshness <span class="text-green-600">You Can</span></h1>
+      <h1 class="text-5xl font-bold mb-8"><span class="text-green-600">Count</span> On, Prices You’ll Love!</h1>
+
+      <p>Shop your daily essentials at unbeatable prices. From fresh produce to pantry</p>
+      <p class="mb-8">staples, we’ve got you
+        covered every day!</p>
+
+      <img src="images/hero-vegetables.png" alt="">
+    </section>
+  </header>
+  <!-- main section -->
+  <main>
+    <!-- services section -->
+     <section class="md:container mx-auto mb-32">
+      <div>
+        <h1>Services</h1>
+      </div>
+      <!-- services card holder -->
+      <div class="flex md:flex-row gap-6">
+        <!-- card-1 -->
+        <div class="bg-stone-300 p-8 rounded-2xl flex flex-col justify-center items-center">
+          <img class="bg-white rounded-" src="images/service.png" alt="">
+          <h1>24/7 Services </h1>
+          <p>"We provide fresh, high-quality vegetables with 24/7 service to meet your needs anytime, anywhere."</p>
+        </div>
+        <!-- card-2 -->
+        <div class="bg-stone-300 p-8 rounded-2xl" >
+          <img src="images/service.png" alt="">
+          <h1>24/7 Services </h1>
+          <p>"We provide fresh, high-quality vegetables with 24/7 service to meet your needs anytime, anywhere."</p>
+        </div>
+        <!-- card-3 -->
+        <div class="bg-stone-300 p-8 rounded-2xl" >
+          <img src="images/service.png" alt="">
+          <h1>24/7 Services </h1>
+          <p>"We provide fresh, high-quality vegetables with 24/7 service to meet your needs anytime, anywhere."</p>
+        </div>
+      </div>
+     </section>
+  </main>
+  <!-- footer section -->
+  <footer>
+
+  </footer>
 </body>
+
 </html>
