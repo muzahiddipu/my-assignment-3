@@ -38,7 +38,7 @@
 
 <body>
   <!-- header section -->
-  <header class="mb-32 bg-gradient-to-b from-white to-stone-200">
+  <header class="mb-32 bg-gradient-to-b from-white to-[#EFEBE3]">
     <!-- nav section -->
     <div class="flex justify-between  md:container mx-auto my-7 items-center">
       <!-- logo here -->
@@ -59,8 +59,8 @@
       <div class="flex gap-4 items-center">
         <i class="fa-solid fa-magnifying-glass"></i>
         <i class="fa-solid fa-cart-shopping"></i>
-        <button class="bg-white px-7 py-2 rounded-lg border-solid border-2 border-green-500">Login</button>
-        <button class="bg-green-600 text-white px-7 py-2 rounded-lg">Register</button>
+        <button class="bg-white px-7 py-2 rounded-lg border-solid border-2 border-green-500 font-semibold">Login</button>
+        <button class="bg-green-600 text-white px-7 py-2 rounded-lg font-semibold">Register</button>
       </div>
     </div>
     <!-- hero section -->
@@ -85,21 +85,21 @@
       <!-- services card holder -->
       <div class="flex md:flex-row gap-6">
         <!-- card-1 -->
-        <div class="bg-stone-200 p-10 rounded-2xl flex flex-col justify-center items-center">
+        <div class=" bg-[#EFEBE3] p-10 rounded-2xl flex flex-col justify-center items-center">
           <img class="bg-white rounded-full p-4" src="images/service.png" alt="">
           <h1 class="text-xl font-semibold mb-3">24/7 Services </h1>
           <p class="opacity-70">"We provide fresh, high-quality vegetables with 24/7 service to meet your needs anytime,
             anywhere."</p>
         </div>
         <!-- card-2 -->
-        <div class="bg-stone-200 p-8 rounded-2xl flex flex-col justify-center items-center">
+        <div class=" bg-[#EFEBE3] p-8 rounded-2xl flex flex-col justify-center items-center">
           <img class="bg-white rounded-full p-4" src="images/delivery.png" alt="">
           <h1 class="text-xl font-semibold mb-3">Fast Delivery</h1>
           <p class="opacity-70">"Enjoy fast, reliable delivery of fresh vegetables anytime,bringing quality produce to
             your doorstep swiftly."</p>
         </div>
         <!-- card-3 -->
-        <div class="bg-stone-200 p-8 rounded-2xl flex flex-col justify-center items-center">
+        <div class=" bg-[#EFEBE3] p-8 rounded-2xl flex flex-col justify-center items-center">
           <img class="bg-white rounded-full p-4" src="images/healthy.png" alt="">
           <h1 class="text-xl font-semibold mb-3">Healthy Products </h1>
           <p class="opacity-70">"We offer fresh, nutritious, and high-quality products to support a healthy lifestyle
@@ -108,18 +108,18 @@
       </div>
     </section>
     <!-- Popular products section -->
-    <section class="bg-stone-200">
+    <section class="bg-[#EFEBE3]">
       <div class="md:container mx-auto mb-32 py-16">
         <h1 class="text-3xl font-semibold text-green-600 mb-12" >Popular Products</h1>
         <!-- Products Cards part -->
         <div class="flex justify-between">
           <!-- offer card -->
           <div
-            class="bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] p-10 rounded-2xl flex flex-col items-center">
+            class="relative bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] p-10 rounded-2xl flex flex-col justify-start gap-5 w-1/3">
             <h2 class="text-2xl text-white font-semibold">30% off</h2>
-            <p>Discover a world of treats, toys, and essentials handpicked from us.</p>
-            <button>Buy Now</button>
-            <img src="images/vegetable-offer.png" alt="">
+            <p>Discover a world of treats, toys, and <br> essentials handpicked from us.</p>
+            <button class="bg-white rounded-lg w-1/3 px-3 py-2 text-2xl font-semibold" >Buy Now</button>
+            <img class="absolute bottom-0 right-0" src="images/vegetable-offer.png" alt="">
           </div>
           <!-- regular cards holder -->
           <div class="grid grid-cols-3 gap-6">
@@ -254,10 +254,76 @@
         </div>
       </div>
     </section>
+    <!-- Arrival and Offers section -->
+     <section class="md:container mx-auto">
+      <h1 class="text-3xl font-semibold text-green-600 mb-12">Arrival & Offers</h1>
+      <!-- arrival cards holder -->
+      <div class="flex justify-between">
+        <!-- arrival card-1 -->
+        <div class="flex gap-16 justify-center items-center bg-[#115414] px-16 rounded-2xl" >
+          <!-- text and button content -->
+          <div class="flex flex-col gap-5">
+            <img src="images/dawat-logo.png" alt="">
+            <button class="text-white font-semibold text-2xl bg-[#63B76D] rounded-lg px-10 py-3">Cook Exotic Dishes</button>
+            <h1 class="text-white text-4xl">UP to <span class="font-bold">20% OFF</span></h1>
+          </div>
+          <!-- image content -->
+          <div>
+            <img src="images/dawat-mock-up.png" alt="">
+          </div>
+        </div>
+        <!-- arrival card-2 -->
+        <div class="flex gap-16 justify-center items-center bg-[#102861] px-16 py-10 rounded-2xl" >
+          <!-- text and button content -->
+          <div class="flex flex-col gap-5">
+            <img class="h-32 w-24" src="images/india-gate-logo.png" alt="">
+            <button class="text-white font-semibold text-2xl bg-[#2A4D97] rounded-lg px-10 py-3">World’s No.1 Rice</button>
+            <h1 class="text-white text-4xl">UP to <span class="font-bold">40% OFF</span></h1>
+          </div>
+          <!-- image content -->
+          <div>
+            <img src="images/india-gate-mock-up.png" alt="">
+          </div>
+        </div>
+     </section>
   </main>
   <!-- footer section -->
-  <footer>
-
+  <footer class="bg-[#179800]">
+    <!-- subscribe section -->
+    <section class="flex md:container mx-auto px-24 py-14 bg-[#EFEBE3] rounded-xl justify-around items-center -translate-y-52 mt-60 -mb-60">
+      <!-- image content -->
+      <div>
+        <img src="images/vegetable-busket.png" alt="">
+      </div>
+      <!-- others content -->
+      <div class="flex flex-col gap-10">
+        <h1 class="text-4xl font-semibold">Get Grocery News!</h1>
+        <p class="text-2xl font-semibold">Exclusive training tips, ticks, product deals and more.</p>
+        <input class="w-full max-w-md px-4 py-2 text-lg border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter email...." type="email" name="" id="">
+        <button class="bg-green-600 text-white px-7 py-2 rounded-lg font-semibold w-1/3">Subscribe</button>
+      </div>
+    </section>
+    <!-- footer section -->
+     <section class="flex justify-between md:container mx-auto py-16">
+      <div class="gap-3">
+        <img src="images/logo-footer.png" alt="">
+        <p class="text-white">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br>friends</p>
+      </div>
+      <div>
+        <ul class="flex flex-col gap-6 text-white">
+          <li><a href="">Product</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="text-white">
+        <h1>Follow us</h1>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+     </section>
   </footer>
 </body>
 
